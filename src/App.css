@@ -1,0 +1,165 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.App {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #1e1e1e;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1,
+h2 {
+  color: #ffffff;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-section,
+.form-section {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.user-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.user-card {
+  background: #2c2c2c;
+  padding: 20px;
+  border-radius: 8px;
+  width: calc(100% - 20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-info {
+  flex: 1;
+}
+
+.user-info h3 {
+  margin: 0;
+  color: #ffffff;
+}
+
+.user-info p {
+  margin: 5px 0;
+  color: #b0b0b0;
+}
+
+.user-actions {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  background: transparent;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  color: #007bff;
+}
+
+form {
+  margin: 20px 0;
+}
+
+input {
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #555;
+  border-radius: 4px;
+  background: #333;
+  color: #e0e0e0;
+  width: calc(100% - 22px);
+}
+
+input[type="number"] {
+  width: calc(100% - 22px);
+}
+
+button[type="submit"] {
+  margin-top: 10px;
+  background: linear-gradient(45deg, #007bff, #0056b3);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+button[type="submit"]:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background: #2c2c2c;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  max-width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.close-button {
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  float: right;
+  border-radius: 4px;
+}
+
+.close-button:hover {
+  box-shadow: blue;
+}
+
+/* New CSS for blurring the background */
+.blur {
+  filter: blur(5px);
+}
